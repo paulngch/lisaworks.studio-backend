@@ -52,4 +52,8 @@ db.once("open", () => {
         console.log("listening on port", PORT);
     });
 });
+//Server status msg
+app.get("/", (req, res) => {
+    res.json({ ServerStatus: "Running" });
+});
 //# sourceMappingURL=server.js.map
