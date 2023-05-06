@@ -21,7 +21,6 @@ app.use((0, cors_1.default)({
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization", "x-access-token"],
 }));
-app.use(express_1.default.static("../client/dist"));
 app.use(express_1.default.json());
 app.use((0, morgan_1.default)("dev"));
 //controllers
